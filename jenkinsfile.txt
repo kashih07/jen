@@ -23,7 +23,7 @@ pipeline{
         {
 	steps{
             echo "apply"
-	bat label='',script:'python hello.py'
+	bat(/"C:\Users\harsh\AppData\Local\Programs\Python\Python310\python.exe" "hello.py"/)
         }
 	}
     }

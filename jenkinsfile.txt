@@ -1,18 +1,29 @@
-node{
-        stage('init')
-        {
+pipeline{
+        
+	agent any
+	stages{
+	stage('init')
+        {steps{
             echo "init"
         }
+	}
         stage('validate')
-        {echo "validate"
+        {
+	steps{
+	echo "validate"
         }
+	}
         stage('plan')
         {
+	steps{
             echo "plan"
         }
+	}
         stage('apply')
         {
+	steps{
             echo "apply"
         }
-    
+	}
+    }
 }

@@ -1,0 +1,18 @@
+node{
+        stage('init')
+        {
+            echo "init"
+        }
+        stage('validate')
+        {echo "validate"
+        }
+        stage('plan')
+        {
+            echo "plan"
+        }
+        stage('apply')
+        {
+            echo "apply"
+        }
+    
+}
